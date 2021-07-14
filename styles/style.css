@@ -59,7 +59,7 @@ body {
     transition: transform 0.3s ease;
 }
 .top-banner-image:hover img{
-    transform: rotate(20deg);
+    transform: rotate(10deg);
 }
 
 /* football player articles  */
@@ -77,4 +77,51 @@ body {
 }
 .player-info img{
     width: 100%;
+}
+
+/* footer  */
+footer{
+    text-align: center;
+}
+.social-links{
+    margin: 20px 20px;
+}
+.social-links a{
+    padding-left: 20px;
+}
+footer img{
+    width: 300px;
+}
+
+/* responsiveness for mobile screens */
+@media only screen and (max-width: 688px) {
+    .body{
+        overflow: hidden;
+    }
+    .top-banner-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-title{
+        font-size: 25px;
+    }
+    .top-banner-image img{
+        text-align: center;
+        width: 75%;
+        padding-bottom: 650px;
+        padding-right: 450px;
+    }
+    .players-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* responsiveness for tablet screens */
+@media only screen and (min-width: 688px) and (max-width: 990px) {
+    .top-banner-section{
+        flex-direction: column;
+    }
+    .players-details{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
